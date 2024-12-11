@@ -1,4 +1,4 @@
-# Packets Visualizer
+<img width="435" alt="image" src="https://github.com/user-attachments/assets/eee2f889-1a0b-4586-b16e-347539999d8f"># Packets Visualizer
 
 ## Описание
 
@@ -28,7 +28,7 @@ Packets Visualizer — это инструмент командной строк
 pip install -r requirements.txt
 ```
 
-### Использование
+## Использование
 
 Для запуска инструмента используйте следующую команду:
 
@@ -44,11 +44,31 @@ python dependency_visualizer.py output.puml requests
 # Этот пример создаст файл output.puml, содержащий граф зависимостей для пакета requests.
 ```
 
-### Генерация графа
+## Генерация графа
 
 Сгенерированный файл PlantUML можно визуализировать с помощью любого инструмента, поддерживающего PlantUML, например, PlantUML Online Server.
 
-### Тестирование
+## Тестирование
+
+### Пример Использования
+
+```python
+    def test_get_dependencies(self, mock_stdout):
+        dependencies = get_dependencies('requests')
+        self.assertIn('urllib3', dependencies)
+
+    def test_generate_plantuml(self):
+        dependencies = {'urllib3', 'chardet'}
+        plantuml_code = generate_plantuml('requests', dependencies)
+        self.assertIn('package "requests"', plantuml_code)
+        self.assertIn('[ urllib3 ]', plantuml_code)
+        self.assertIn('[ requests ] --> [ urllib3 ]', plantuml_code)
+```
+
+### Результат Тестов
+
+<img width="435" alt="image" src="https://github.com/user-attachments/assets/9e41328b-3019-4788-ad05-4affcc3ff0cd">
+
 
 Проект включает тесты для проверки функциональности. Для запуска тестов используйте следующую команду:
 
