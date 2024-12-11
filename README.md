@@ -1,4 +1,4 @@
-# Dependency Visualizer
+# Packets Visualizer
 
 ## Описание
 
