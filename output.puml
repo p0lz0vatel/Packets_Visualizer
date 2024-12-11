@@ -1,0 +1,12 @@
+@startuml
+package "requests" {
+  [ urllib3 ]
+  [ requests ] --> [ urllib3 ]
+  [ charset-normalizer ]
+  [ requests ] --> [ charset-normalizer ]
+  [ certifi ]
+  [ requests ] --> [ certifi ]
+  [ idna ]
+  [ requests ] --> [ idna ]
+}
+@enduml
