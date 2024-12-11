@@ -41,7 +41,7 @@ python dependency_visualizer.py <output_path> <package_name>
 
 python dependency_visualizer.py output.puml requests
 
-Этот пример создаст файл output.puml, содержащий граф зависимостей для пакета requests.
+# Этот пример создаст файл output.puml, содержащий граф зависимостей для пакета requests.
 ```
 
 ### Генерация графа
