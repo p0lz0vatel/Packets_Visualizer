@@ -1,4 +1,4 @@
-<img width="435" alt="image" src="https://github.com/user-attachments/assets/eee2f889-1a0b-4586-b16e-347539999d8f"># Packets Visualizer
+# Packets Visualizer
 
 ## Описание
 
