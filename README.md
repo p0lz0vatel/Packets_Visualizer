@@ -28,7 +28,7 @@ Packets Visualizer — это инструмент командной строк
 pip install -r requirements.txt
 ```
 
-## Использование
+# Пример Использование
 
 Для запуска инструмента используйте следующую команду:
 
@@ -43,6 +43,9 @@ python dependency_visualizer.py output.puml requests
 
 # Этот пример создаст файл output.puml, содержащий граф зависимостей для пакета requests.
 ```
+
+## Результат
+<img width="349" alt="image" src="https://github.com/user-attachments/assets/8b0b7b8e-cff2-4ff7-8d75-b642cdc420b2" />
 
 ## Генерация графа
 
